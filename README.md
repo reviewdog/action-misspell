@@ -7,6 +7,8 @@ This action runs [misspell](https://github.com/client9/misspell) with
 [reviewdog](https://github.com/reviewdog/reviewdog) on pull requests to improve
 code review experience.
 
+[![sample annotation](https://user-images.githubusercontent.com/3797062/64926127-b8b0bc00-d834-11e9-97d5-5b6aa06dc573.png)](https://github.com/reviewdog/action-misspell/pull/1/files)
+
 ## Inputs
 
 ### `github_token`
