@@ -1,0 +1,23 @@
+name: 'Run misspell with reviewdog'
+description: 'Run misspell with reviewdog on pull requests to improve code review experience.'
+author: 'haya14busa (reviewdog)'
+inputs:
+  github_token:
+    description: 'GITHUB_TOKEN.'
+    required: true
+  locale:
+    description: '-locale flag of misspell. (US/UK)'
+    default: ''
+  level:
+    description: 'Report level for reviewdog [info,warning,error]'
+    default: 'error'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.github_token }}
+    - ${{ inputs.locale }}
+    - ${{ inputs.level }}
+branding:
+  icon: 'edit'
+  color: 'gray-dark'
