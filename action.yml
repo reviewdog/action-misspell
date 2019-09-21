@@ -1,5 +1,5 @@
 name: 'Run misspell with reviewdog'
-description: 'Run misspell with reviewdog on pull requests to improve code review experience.'
+description: ':dog: Run misspell with reviewdog on pull requests to improve code review experience.'
 author: 'haya14busa (reviewdog)'
 inputs:
   github_token:
