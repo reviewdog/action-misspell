@@ -11,6 +11,9 @@ inputs:
   level:
     description: 'Report level for reviewdog [info,warning,error]'
     default: 'error'
+  reporter:
+    description: 'Reporter of reviewdog command [github-pr-check,github-pr-review].'
+    default: 'github-pr-check'
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -18,6 +21,7 @@ runs:
     - ${{ inputs.github_token }}
     - ${{ inputs.locale }}
     - ${{ inputs.level }}
+    - ${{ inputs.reporter }}
 branding:
   icon: 'edit'
   color: 'gray-dark'
