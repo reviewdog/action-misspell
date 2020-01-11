@@ -14,6 +14,9 @@ inputs:
   reporter:
     description: 'Reporter of reviewdog command [github-pr-check,github-pr-review].'
     default: 'github-pr-check'
+  find_command:
+    description: 'A `find` command used to select files for spell checking'
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -22,6 +25,7 @@ runs:
     - ${{ inputs.locale }}
     - ${{ inputs.level }}
     - ${{ inputs.reporter }}
+    - $${ inputs.find_command }}
 branding:
   icon: 'edit'
   color: 'gray-dark'
