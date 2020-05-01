@@ -29,6 +29,10 @@ It's the same as the `-level` flag of **reviewdog**.
 Optional. Reporter for **reviewdog** command [`github-pr-check`,`github-pr-review`].
 It's the same as the `-reporter` flag of reviewdog.
 
+### `ignore`
+
+Optional. Ignore (`-i`) a list of comma-separated words.  [`armor`] / [`armour`] / [`armor,color`] / [`armour,colour`].
+
 ## Example usage
 
 ### [.github/workflows/reviewdog.yml](.github/workflows/reviewdog.yml)
