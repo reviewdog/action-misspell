@@ -31,7 +31,7 @@ It's the same as the `-reporter` flag of reviewdog.
 
 ### `ignore`
 
-Optional. Ignore (`-i`) a list of comma-separated words.  [`armor`] / [`armour`] / [`armor,color`] / [`armour,colour`].
+Optional. Ignore (`-i`) a list of comma-separated words.  [`armor`] / [`armor,color`].
 
 ## Example usage
 
