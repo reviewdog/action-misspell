@@ -14,10 +14,17 @@ inputs:
   reporter:
     description: 'Reporter of reviewdog command [github-pr-check,github-pr-review].'
     default: 'github-pr-check'
-  find_command:
-    description: 'A `find` command used to select files for spell checking'
   ignore:
     description: 'Comma-separated words to ignore'
+    default: ''
+  path:
+    description: "Base directory to run misspell. Same as `[path]` of `find` command."
+    default: '.'
+  pattern:
+    description: "File patterns of target files. Same as `-name [pattern]` of `find` command."
+    default: '*'
+  exclude:
+    description: "Exclude patterns of target files. Same as `-not -path [exclude]` of `find` command."
     default: ''
 runs:
   using: 'docker'
