@@ -13,21 +13,25 @@ code review experience.
 
 ### `github_token`
 
-**Required**. Must be in form of `github_token: ${{ secrets.github_token }}`'.
+Optional. `${{ github.token }}` is used by default.
 
 ### `locale`
 
-Optional. -locale flag of misspell. (US/UK)
+Optional. -locale flag of misspell. [`US`/`UK`]
 
 ### `level`
 
-Optional. Report level for reviewdog [info,warning,error].
-It's same as `-level` flag of reviewdog.
+Optional. Report level for **reviewdog** [`info`,`warning`,`error`].
+It's the same as the `-level` flag of **reviewdog**.
 
 ### `reporter`
 
-Optional. Reporter of reviewdog command [github-pr-check,github-pr-review].
-It's same as `-reporter` flag of reviewdog.
+Optional. Reporter for **reviewdog** command [`github-pr-check`,`github-pr-review`].
+It's the same as the `-reporter` flag of reviewdog.
+
+### `ignore`
+
+Optional. Ignore (`-i`) a list of comma-separated words.  [`armor`] / [`armor,color`].
 
 ## Example usage
 

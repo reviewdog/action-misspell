@@ -4,7 +4,7 @@ author: 'haya14busa (reviewdog)'
 inputs:
   github_token:
     description: 'GITHUB_TOKEN.'
-    required: true
+    default: '${{ github.token }}'
   locale:
     description: '-locale flag of misspell. (US/UK)'
     default: ''
@@ -16,6 +16,8 @@ inputs:
     default: 'github-pr-check'
   find_command:
     description: 'A `find` command used to select files for spell checking'
+  ignore:
+    description: 'Comma-separated words to ignore'
     default: ''
 runs:
   using: 'docker'
@@ -26,6 +28,7 @@ runs:
     - ${{ inputs.level }}
     - ${{ inputs.reporter }}
     - $${ inputs.find_command }}
+    - ${{ inputs.ignore }}
 branding:
   icon: 'edit'
   color: 'gray-dark'
