@@ -33,6 +33,19 @@ It's the same as the `-reporter` flag of reviewdog.
 
 Optional. Ignore (`-i`) a list of comma-separated words.  [`armor`] / [`armor,color`].
 
+### `path`
+
+Optional. Base directory to run misspell. Same as `[path]` of `find` command. Default: `.`
+
+### `pattern`
+
+Optional. File patterns of target files. Same as `-name [pattern]` of `find` command. Default: `*`
+
+### `exclude`
+
+Optional. Exclude patterns of target files. Same as `-not -path [exclude]` of `find` command.
+e.g. `.git/*`
+
 ## Example usage
 
 ### [.github/workflows/reviewdog.yml](.github/workflows/reviewdog.yml)
