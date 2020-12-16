@@ -49,6 +49,10 @@ Optional. File patterns of target files. Same as `-name [pattern]` of `find` com
 Optional. Exclude patterns of target files. Same as `-not -path [exclude]` of `find` command.
 e.g. `.git/*`
 
+### `filter_mode`
+
+Optional. Filtering mode for the reviewdog command `[added,diff_context,file,nofilter]`. Default: `added`.
+
 ## Example usage
 
 ### [.github/workflows/reviewdog.yml](.github/workflows/reviewdog.yml)
