@@ -26,6 +26,9 @@ inputs:
   exclude:
     description: "Exclude patterns of target files. Same as `-not -path [exclude]` of `find` command."
     default: ''
+  filter_mode:
+    description: "Filtering mode for the reviewdog command [added,diff_context,file,nofilter]."
+    default: 'added'
 runs:
   using: 'docker'
   image: 'Dockerfile'
