@@ -53,6 +53,10 @@ e.g. `.git/*`
 
 Optional. Filtering mode for the reviewdog command `[added,diff_context,file,nofilter]`. Default: `added`.
 
+### `fail_on_error`
+
+Optional. Exit code for reviewdog when errors are found [true,false]. Default: `false`.
+
 ## Example usage
 
 ### [.github/workflows/reviewdog.yml](.github/workflows/reviewdog.yml)
