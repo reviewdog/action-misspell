@@ -29,6 +29,9 @@ inputs:
   filter_mode:
     description: "Filtering mode for the reviewdog command [added,diff_context,file,nofilter]."
     default: 'added'
+  fail_on_error:
+    description: "Exit code for reviewdog when errors are found [true,false]."
+    default: 'false'
 runs:
   using: 'docker'
   image: 'Dockerfile'
