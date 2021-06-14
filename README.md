@@ -51,11 +51,11 @@ e.g. `.git/*`
 
 ### `filter_mode`
 
-Optional. Filtering mode for the reviewdog command `[added,diff_context,file,nofilter]`. Default: `added`.
+Optional. Filtering mode for the reviewdog command [`added`,`diff_context`,`file`,`nofilter`]. Default: `added`.
 
 ### `fail_on_error`
 
-Optional. Exit code for reviewdog when errors are found [true,false]. Default: `false`.
+Optional. Exit code for reviewdog when errors are found [`true`,`false`]. Default: `false`.
 
 ## Example usage
 
