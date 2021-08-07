@@ -40,14 +40,35 @@ Optional. Ignore (`-i`) a list of comma-separated words.  [`armor`] / [`armor,co
 
 Optional. Base directory to run misspell. Same as `[path]` of `find` command. Default: `.`
 
+Directories are separated by lines. e.g.:
+```yml
+path: |
+  doc
+  src
+```
+
 ### `pattern`
 
 Optional. File patterns of target files. Same as `-name [pattern]` of `find` command. Default: `*`
 
+Patterns are separated by lines. e.g.:
+```yml
+pattern: |
+  *.py
+  *.sh
+```
+
 ### `exclude`
 
 Optional. Exclude patterns of target files. Same as `-not -path [exclude]` of `find` command.
-e.g. `.git/*`
+e.g. `./.git/*`
+
+Patterns are separated by lines. e.g.:
+```yml
+exclude: |
+  ./.git/*
+  ./.cache/*
+```
 
 ### `filter_mode`
 
