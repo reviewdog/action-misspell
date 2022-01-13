@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.15
 
 ENV REVIEWDOG_VERSION=v0.13.1
 
