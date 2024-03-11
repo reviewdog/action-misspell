@@ -1,6 +1,6 @@
 FROM alpine:3.19
 
-ENV REVIEWDOG_VERSION=v0.17.1
+ENV REVIEWDOG_VERSION=v0.17.2
 
 RUN wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b /usr/local/bin/ ${REVIEWDOG_VERSION}
 RUN wget -O - -q https://raw.githubusercontent.com/client9/misspell/master/install-misspell.sh | sh -s -- -b /usr/local/bin/
