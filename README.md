@@ -6,7 +6,7 @@
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/reviewdog/action-misspell?logo=github&sort=semver)](https://github.com/reviewdog/action-misspell/releases)
 [![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
-This action runs [misspell](https://github.com/client9/misspell) with
+This action runs [misspell](https://github.com/golangci/misspell) with
 [reviewdog](https://github.com/reviewdog/reviewdog) on pull requests to improve
 code review experience.
 
