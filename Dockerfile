@@ -1,6 +1,6 @@
 FROM debian:bullseye-slim
 
-ENV REVIEWDOG_VERSION=v0.20.1
+ENV REVIEWDOG_VERSION=v0.20.2
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
