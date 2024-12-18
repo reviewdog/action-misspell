@@ -46,7 +46,7 @@
 <textevent timeoffset="30" message="And 4min right at threshold. Nice and firm on the pedals." locIndex="15"/>
 </SteadyState>
 <SteadyState Duration="360" Power="0.75449997" pace="0">
-<textevent timeoffset="30" message="Deep into the meat of this workout here. Great job." locIndex="16"/>
+<textevent timeoffset="30" message="  into the meat of this workout here. Great job." locIndex="16"/>
 </SteadyState>
 <SteadyState Duration="240" Power="1.0545" pace="0">
 <textevent timeoffset="30" message="And great strong pace here at 105% for this last solid effort." locIndex="17"/>
