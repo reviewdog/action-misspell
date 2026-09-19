@@ -42,7 +42,7 @@ inputs:
     default: 'false'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/reviewdog/action-misspell:v1.30.0@sha256:3609a13c8a63ce7605fd34ceec7ccfc40709a7564235c4fb7323e8d639bb769e'
+  image: 'docker://ghcr.io/reviewdog/action-misspell:v1.30.1@sha256:1fcc295c5f1216425cb58df35faf914f55c79562c947a16f854aadb505788b2b'
 branding:
   icon: 'edit'
   color: 'gray-dark'
